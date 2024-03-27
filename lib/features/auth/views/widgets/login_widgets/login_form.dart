@@ -1,6 +1,8 @@
 import 'package:doctor_app/core/utils/app_styles/app_colors.dart';
 import 'package:doctor_app/core/widgets/custom_button.dart';
 import 'package:doctor_app/core/widgets/custom_text_field.dart';
+import 'package:doctor_app/features/home/views/home_view.dart';
+import 'package:doctor_app/features/profile/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatefulWidget {
@@ -66,8 +68,8 @@ class _LoginFormState extends State<LoginForm> {
             CustomButton(
               onTap: () {
                 if (_loginFormKey.currentState!.validate()) {
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  //     builder: (context) => const HomeView()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) => const ProfileView()));
                 }
               },
               color: widget.mainColor,
