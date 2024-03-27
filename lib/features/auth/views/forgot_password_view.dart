@@ -1,9 +1,9 @@
 import 'package:doctor_app/constants.dart';
+import 'package:doctor_app/features/auth/views/widgets/forgot_password_widgets/forgot_password_view_body.dart';
 import 'package:flutter/material.dart';
-import 'package:doctor_app/features/on_boarding/views/widgets/on_boarding_view_body.dart';
 
-class OnBoardingView extends StatelessWidget {
-  const OnBoardingView({super.key});
+class ForgotPasswordView extends StatelessWidget {
+  const ForgotPasswordView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class OnBoardingView extends StatelessWidget {
               image: AssetImage(kBackGroundImage), fit: BoxFit.cover)),
       child: const Scaffold(
         backgroundColor: Colors.transparent,
-        body: OnBoardingViewBody(),
+        body: SafeArea(child: ForgotPasswordViewBody()),
       ),
     );
   }

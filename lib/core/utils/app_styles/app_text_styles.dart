@@ -15,4 +15,20 @@ abstract class AppTextStyles {
   );
   static const TextStyle styleMedium18 = TextStyle(
       fontSize: 18, fontWeight: FontWeight.w500, fontFamily: kMainFontFamily);
+
+  static const styleBold14 = TextStyle(
+    fontSize: 14,
+    fontFamily: kMainFontFamily,
+    fontWeight: FontWeight.w700,
+  );
+  static const styleregular14 = TextStyle(
+    fontSize: 14,
+    fontFamily: kMainFontFamily,
+    fontWeight: FontWeight.w500,
+  );
+  static const style12 = TextStyle(
+    fontSize: 12,
+    fontFamily: kMainFontFamily,
+    fontWeight: FontWeight.w500,
+  );
 }

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:doctor_app/constants.dart';
 import 'package:doctor_app/features/on_boarding/views/on_boarding_view.dart';
 import 'package:doctor_app/core/utils/app_styles/app_colors.dart';
@@ -10,7 +12,7 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    precacheImage(const AssetImage('assets/images/background.jpg'), context);
+    precacheImage(const AssetImage(kBackGroundImage), context);
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(context,
           MaterialPageRoute(builder: (context) => const OnBoardingView()));
